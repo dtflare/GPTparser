@@ -13,4 +13,9 @@ setup(
         "python-dotenv"
     ],
     python_requires='>=3.8',
+     entry_points={
+        'console_scripts': [
+            'parsR=parsR:main',  # Format is 'command=function'
+        ],
+    },
 )

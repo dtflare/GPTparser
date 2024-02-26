@@ -12,6 +12,8 @@ A fresh Miniconda environment is recommended due to the script's strict dependen
 
 Create a new Miniconda environment, & apply the following settings:
 $ conda create --name myenv python=3.8
+$ pip install .
+$ OR
 $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
 
 Launch Langchain's newspaper module:

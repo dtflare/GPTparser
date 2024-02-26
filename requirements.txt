@@ -1,0 +1,11 @@
+1. Install/Activate Miniconda Environment in Linux CLI
+2. Run setup.py
+3. Follow README.md instructions
+
+Below is a list of the requirements
+        "langchain==0.1.4",
+        "openai==1.10.0",
+        "deeplake",
+        "tiktoken",
+        "newspaper3k",
+        "python-dotenv"

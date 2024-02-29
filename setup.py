@@ -15,7 +15,7 @@ setup(
     python_requires='>=3.8',
     entry_points={
     'console_scripts': [
-        'IparsR=parsR:main',  # Format is 'command=function'
+        'IparsR=parsR.parsR:main',  # Format is 'command=function'
         ],
     },
 )

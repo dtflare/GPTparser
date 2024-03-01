@@ -1,5 +1,3 @@
-#this is a direct copy of current parsR in use
-
 #!/usr/bin/env python3
 
 # !pip install -q newspaper3k python-dotenv
@@ -18,7 +16,7 @@ import json
 def main():
     # Suppress UserWarnings
     warnings.filterwarnings("ignore")
-
+   
     # Command line arguments handling
     if len(sys.argv) < 2:
         print("Usage: python parsR.py <URL> [output_file]")
@@ -55,16 +53,14 @@ def main():
         {"role": "system", "content": "Marv is a factual chatbot that is also sarcastic."},
         {"role": "user", "content": "What's the capital of France?"},
         {"role": "assistant", "content": "Paris, as if everyone doesn't know that already."}
-        # You can add the second example following the same structure
     ]
-        
 
     # Convert the examples list to a JSON string for inclusion in the prompt
     examples_json = json.dumps(examples, indent=4)
 
     # Preparing the prompt without using .format() for the examples
-    prompt_start = "You are a very good assistant that parses each article's message as a role, content, and optional name.\n\nExample 1 and 2:\n"
-    prompt_end = f"\n\nHere's the article you want to summarize.\n\n==================\nTitle: {article.title}\n\n{article.text}\n==================\n\nParse previous article into OpenAI finetune format: each message has a role, content, and optional name. Each example in the dataset should be a conversation. Assistant messages in the data = ideal responses. User messages in data = likely questions. System messages in data = background information, never quoted directly as part of assistant responses, used to elevate data comprehension, response relevancy and quality."
+    prompt_start = "You are a very good assistant that parses each article's text into OpenAI fine-tune JSON format by adding a messages array at the beginning, along with roles and content  for System, User, and Assistant. Example 1 & 2 = correct format. \n\nExample 1 and 2:\n"
+    prompt_end = f"\n\nHere's the article you want to summarize.\n\n==================\nTitle: {article.title}\n\n{article.text}\n==================\n\nParse previous article into OpenAI finetune format that is conversational. Without referencing the article, use the text to create realistic User questions, Assistant answers, and System messages. Assistant messages in the data = ideal responses. User messages in data = create questions a human may ask about the article's text. System messages in data = background information, never quoted directly as part of assistant responses, used to elevate data comprehension, response relevancy and quality."
 
     # Combining parts of the prompt with the examples_json string
     prompt = prompt_start + examples_json + prompt_end
@@ -73,7 +69,7 @@ def main():
     #####listing examples
 
     # Prepare the prompt with the article data
-    prompt = """You are a very good assistant that parses each article's message as a role, content, and optional name.
+    prompt = """You are a very good assistant that parses each article's text into OpenAI fine-tune JSON format by adding a messages array at the beginning, along with  creating roles and content for System, User, and Assistant. Example 1 & 2 = correct format.
 
 
     Example 1 and 2:
@@ -87,7 +83,7 @@ def main():
     {article_text}
     ==================
 
-    Parse previous article into OpenAI finetune format: each message has a role, content, and optional name. Each example in the dataset should be a conversation. Assistant messages in the data = ideal responses. User messages in data = likely questions. System messages in data = background information, never quoted directly as part of assistant  responses, used to elevate data comprehension, response relevancy and quality.
+    Parse previous article into OpenAI finetune format: each message has a role (system, user, assistant), and content. Use article's text to create User questions, and Assistant answers in the dataset as they should be part a conversation. Assistant messages in the data = ideal responses. User messages in data = likely questions. System messages in data = background information, never quoted directly as part of assistant  responses, used to elevate data comprehension, response relevancy and quality.
     """.format(article_title=article.title, article_text=article.text)
 
     messages = [HumanMessage(content=prompt)]

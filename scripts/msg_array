@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#add to $PATH, and run from within your directory with JSON files
+
+DIR="./"
+
+# only works on .json files
+for FILE in ${DIR}*.json; do
+    # Checks if .json already has msg array
+    if ! grep -q '"messages":' "${FILE}"; then
+
+        CONTENT=$(cat "${FILE}")
+        
+       
+        echo "{\"messages\": $CONTENT}" > "${FILE}"
+        
+        echo "Processed ${FILE}"
+    else
+       
+        echo "Skipped ${FILE} (already contains 'messages')"
+    fi
+done

@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+#all you have to do is ./j_val if you are in the current directory with the json files
+
+import json
+import os
+import sys
+
+def validate_json(directory):
+    for filename in os.listdir(directory):
+        if filename.endswith(".json"):
+            filepath = os.path.join(directory, filename)
+            try:
+                with open(filepath, 'r') as file:
+                    json.load(file)
+                print(f"Valid JSON: {filename}")
+            except json.JSONDecodeError as e:
+                print(f"Invalid JSON in {filename}: {e}")
+
+if __name__ == "__main__":
+    # Use the current directory if no argument is provided
+    directory = sys.argv[1] if len(sys.argv) == 2 else "."
+    
+    validate_json(directory)

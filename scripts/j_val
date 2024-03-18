@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
-#all you have to do is ./j_val if you are in the current directory with the json files
+# Add to $PATH and run from within current directory with the parsed .json files
+# Will output Valid/Invalid and any errors.
+# To run: $ j_val
+# To edit invalid file, I recommend using: https://jsonlint.com/
+
 
 import json
 import os

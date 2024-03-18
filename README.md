@@ -60,10 +60,10 @@ For those planning on editing the examples/prompt for different output, and/or c
 
 Once changes are applied add GPTparser to $PATH, either in your .bashrc file, or include within a file in your $PATH
 Active Miniconda Env
-Launch both #1 & #2 dependencies everytime with a new GPTparser session.
-Dependency #1:
+Once GPTparser Miniconda session is activated, launch both 1 & 2 dependencies everytime.
+Dependency 1:
 $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
-Dependency #2, Langchain's newspaper module:
+Dependency 2, Langchain's newspaper module:
 $ !pip install -q newspaper3k python-dotenv
 Add API KEY:
 $ export OpenAI_API_KEY

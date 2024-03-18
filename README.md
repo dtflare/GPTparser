@@ -23,8 +23,8 @@
 
 # Why #
 - I created GPTparser because I couldn't find a tool that enabled me to efficiently scrape and parse content directly from URL's into an output file.
-- I also created this with the goal and strategy of utilizing cost effective and quality control measures.
-	-- GPTparser enables you to create a large 60k word dataset and finetune via OpenAI API for <$5.
+- GPTparser was created for ease of use, to be cost effective, and to enable effective quality control.
+	1. GPTparser enables you to create a large 60k+ token dataset and finetune via OpenAI API for <$5.
 - GPTparser enables you to work directly from your Linux CLI, and having individual control over the files maximizes your ability to edit the content which = maximal quality.
 - See the /scripts directory for further tools to help you format, validate, and combine these files into one dataset in proper Chat Completions JSON API format.
 

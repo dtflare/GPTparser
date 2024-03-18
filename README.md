@@ -77,7 +77,7 @@
 ### Reminder ###
 - To run GPTparser after installation, or once added to your global path:
 	1. $ GPTparser website_url.com file_name.json
-- OR
+- OR:
 	1. $ GPTparser website_url.com
 
 ### /Scripts ###

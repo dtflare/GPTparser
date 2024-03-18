@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #add to $PATH, and run from within your directory with JSON files
+# To run: $ msg_array
 
 DIR="./"
 

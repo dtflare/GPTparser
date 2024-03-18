@@ -33,15 +33,15 @@
 # GPTparser Installation #
 ## Ubuntu Directions: ## 
 
-Clone repo and install the package:
+- Clone repo and install the package:
 $ git clone git@github.com:dtflare/GPTparser.git
-Create a new Miniconda environment, & apply the following settings:
+- Create a new Miniconda environment, & apply the following settings:
 $ conda create --name GPTparser python=3.8
-Activate environment
+- Activate environment
 $ conda activate GPTparser
-Go into your cloned repo directory
+- Go into your cloned repo directory
 $ cd GPTparser
-Once in /GPTparser install the package/dependencies:
+- Once in /GPTparser install the package/dependencies:
 	- Must be installed within activated Miniconda Environment (does not specifically require Miniconda)
 $ pip install .
 -Export your OpenAI API Key within your Miniconda environment - will expire when session ends.

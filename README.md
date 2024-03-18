@@ -36,7 +36,7 @@
 - Clone repo and install the package:
 	1. $ git clone git@github.com:dtflare/GPTparser.git
 - Create a new Miniconda environment, & apply the following settings:
-  	2.$ conda create --name GPTparser python=3.8
+  	2. $ conda create --name GPTparser python=3.8
 - Activate environment
   	3. $ conda activate GPTparser
 - Go into your cloned repo directory

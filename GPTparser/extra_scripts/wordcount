@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-#uses regex to separate characters into words and exclude characters, symbols, numbers, etc.
+# uses regex to separate characters into words and exclude characters, symbols, numbers, etc.
 
-#use countwords file.jsonl
+# use countwords file.jsonl
 
 import sys
 import re
@@ -18,9 +18,12 @@ def count_words_in_file(filename):
     except FileNotFoundError:
         print(f"The file '{filename}' was not found.")
 
-if __name__ == "__main__":
+def main():
     if len(sys.argv) < 2:
         print("Usage: python count_words.py <filename>")
     else:
         filename = sys.argv[1]
         count_words_in_file(filename)
+
+if __name__ == "__main__":
+    main()

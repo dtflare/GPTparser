@@ -5,7 +5,6 @@
 # To run: $ j_val
 # To edit invalid file, I recommend using: https://jsonlint.com/
 
-
 import json
 import os
 import sys
@@ -21,8 +20,11 @@ def validate_json(directory):
             except json.JSONDecodeError as e:
                 print(f"Invalid JSON in {filename}: {e}")
 
-if __name__ == "__main__":
+def main():
     # Use the current directory if no argument is provided
     directory = sys.argv[1] if len(sys.argv) == 2 else "."
     
     validate_json(directory)
+
+if __name__ == "__main__":
+    main()

@@ -82,8 +82,8 @@
 ### /Scripts ###
 # View individual scripts for use #
 - j_val = JSON validator for individual .json files within Directory
-- msg_array = adds Message array as needed to .json individual files
 - combinR = combines all individual files into 1 .jsonl dataset
+- wordcount = use to get accurate word count of your combined dataset
 
 ### Contributions ###
 Please feel free to contribute! Whether it's code, directions etc. credit will always be given.

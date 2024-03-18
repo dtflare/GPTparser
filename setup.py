@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="parsR",
+    name="GPTparser",
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
@@ -15,7 +15,7 @@ setup(
     python_requires='>=3.8',
     entry_points={
     'console_scripts': [
-        'GPTparser=GPTparser.parsR:main',  # Format is 'command=function'
+        'GPTparser=parsR.GPTparser:main',  # Format is 'command=function'
         ],
     },
 )

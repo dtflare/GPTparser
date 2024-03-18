@@ -98,5 +98,15 @@ To contribute:
 
 Submit feature requests via the issues tab.
 
-### If you use GPTparser for your dataset, all I ask is you or your team share it with the community! ##
+### If you use GPTparser for your dataset please share it or your experience with the community! ###
 
+### Citation ###
+If you use GPTparser or associated tools to create a dataset or wish to refer to the baseline results published here, please use the following citation:
+
+@dtflare{GPTparser,
+author = {Daniel Flaherty},
+title = {GPTparser},
+year = {2024},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/dtflare/GPTparser}}}

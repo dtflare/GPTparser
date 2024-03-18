@@ -13,13 +13,6 @@ setup(
         "python-dotenv"
     ],
     python_requires='>=3.8',
-#    entry_points={
-#    'console_scripts': [
-#        'GPTparser=GPTparser.GPTparser:main',  # Format is 'command=function'
-#        ],
-#    },
-#)
-##    ],
     entry_points={
         'console_scripts': [
             'GPTparser=GPTparser.GPTparser:main',

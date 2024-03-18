@@ -84,3 +84,18 @@
 - j_val = JSON validator for individual .json files within Directory
 - msg_array = adds Message array as needed to .json individual files
 - combinR = combines all individual files into 1 .jsonl dataset
+
+### Contributions ###
+Please feel free to contribute! Whether it's code, directions etc. credit will always be given.
+
+To contribute:
+
+    Open a new issue to start a discussion around a feature idea or a bug.
+    Fork the repo and start making your changes to a new branch.
+    Include a test showing the fix & features working properly.
+    Send a pull request!
+    
+
+Submit feature requests via the issues tab.
+
+### If you use GPTparser for your dataset, all I ask is you or your team share it with the community! ##

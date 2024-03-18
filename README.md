@@ -17,7 +17,6 @@
 
 
 ## After you have used GPTparser to parse your webpages into documents, utilize the scripts in /scripts to turn them into a usable dataset. ##
-### View individual scripts for directions ###
 
 - This was built using Linux Ubuntu, please adjust the below directions per your OS.
 - *GPTparser shares no professional affiliation with OpenAI.*
@@ -81,7 +80,7 @@
 	1. $ GPTparser website_url.com
 
 ### /Scripts ###
-# See individual scripts for use #
+# View individual scripts for use #
 - j_val = JSON validator for individual .json files within Directory
 - msg_array = adds Message array as needed to .json individual files
 - combinR = combines all individual files into 1 .jsonl dataset

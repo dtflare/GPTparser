@@ -58,8 +58,8 @@ $ GPTparser https://url.com output_file.json
 Adjust prompts as needed, currently it will output OPENAI's Chat Completions JSON format for Fine-Tuning.
 For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
 
-Once changes are applied add GPTparser to $PATH, either in your .bashrc file, or include within a file in your $PATH
-Active Miniconda Env
+Once changes are applied add GPTparser to $PATH.
+Active Miniconda Env.
 Once GPTparser Miniconda session is activated, launch both 1 & 2 dependencies everytime.
 Dependency 1:
 $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken

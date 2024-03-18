@@ -61,24 +61,24 @@
 - Active Miniconda Env.
 - Once GPTparser Miniconda session is activated, launch both 1 & 2 dependencies everytime.
 - Dependency(1)
-1. $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
+	1. $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
 - Dependency(2), Langchain's newspaper module:
-2. $ !pip install -q newspaper3k python-dotenv
+	1. $ !pip install -q newspaper3k python-dotenv
 -Add API KEY:
-3. $ export OpenAI_API_KEY
+	1. $ export OpenAI_API_KEY
 -mkdir & cd into parsed files host directory, then with GPTparser in $PATH:
-4. $ GPTparser https://url.com output_file.json
+	1. $ GPTparser https://url.com output_file.json
 -IF GPTparser is not in $PATH, simply use:
-5. $ ./GPTparser https://url.com output_file.json
+	1. $ ./GPTparser https://url.com output_file.json
 
 
  
  
 ### Reminder ###
 - To run GPTparser after installation, or once added to your global path:
-1. $ GPTparser website_url.com file_name.json
-OR
-1. $ GPTparser website_url.com
+	1. $ GPTparser website_url.com file_name.json
+- OR
+	1. $ GPTparser website_url.com
 
 ### /Scripts ###
 # See individual scripts for use #

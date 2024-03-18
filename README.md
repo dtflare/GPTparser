@@ -84,4 +84,4 @@ $ GPTparser website_url.com
 # See individual scripts for use #
 j_val = JSON validator for individual .json files within Directory
 msg_array = adds Message array as needed to .json individual files
-combine = combines all individual files into 1 .jsonl dataset
+combinR = combines all individual files into 1 .jsonl dataset

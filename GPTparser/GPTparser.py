@@ -19,7 +19,7 @@ def main():
    
     # Command line arguments handling
     if len(sys.argv) < 2:
-        print("Usage: python GPTparser.py <URL> [output_file]")
+        print("Usage: python parsR.py <URL> [output_file]")
         sys.exit(1)
 
     article_url = sys.argv[1]  # The URL from command line

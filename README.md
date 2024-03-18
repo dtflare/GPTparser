@@ -43,7 +43,7 @@
   	1. $ cd GPTparser
 - Once in /GPTparser install the package/dependencies (Miniconda env recommended but not required)
 	1. $ pip install .
--Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
+- Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
 	- Must be done everytime you start Miniconda session / start using GPTparser
 	1. $ export OPENAI_API_KEY=<enter_api_key>
 - Use GPTparser, create and cd into directory that will host your parsed files, then:

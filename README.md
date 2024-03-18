@@ -36,19 +36,18 @@
 - Clone repo and install the package:
 	1. $ git clone git@github.com:dtflare/GPTparser.git
 - Create a new Miniconda environment, & apply the following settings:
-  	2. $ conda create --name GPTparser python=3.8
+  	1. $ conda create --name GPTparser python=3.8
 - Activate environment
-  	3. $ conda activate GPTparser
+  	1. $ conda activate GPTparser
 - Go into your cloned repo directory
-  	4. $ cd GPTparser
-- Once in /GPTparser install the package/dependencies:
-	- Must be installed within activated Miniconda Environment (does not specifically require Miniconda)
-	5. $ pip install .
+  	1. $ cd GPTparser
+- Once in /GPTparser install the package/dependencies (Miniconda env recommended but not required)
+	1. $ pip install .
 -Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
 	- Must be done everytime you start Miniconda session / start using GPTparser
-	6. $ export OPENAI_API_KEY=<enter_api_key>
+	1. $ export OPENAI_API_KEY=<enter_api_key>
 - Use GPTparser, create and cd into directory that will host your parsed files, then:
-	7. $ GPTparser https://url.com output_file.json
+	1. $ GPTparser https://url.com output_file.json
 
 - Anytime in the future where you use GPTparser, all you have to do is activate the correct Miniconda env, and export your API key.
 

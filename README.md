@@ -1,5 +1,5 @@
 # GPTparser for OPENAI fine-tune #
-- GPTparser is a tool for dataset creation to be used with OpenAI fine-tuning.
+- GPTparser is a dataset creation tool to be used with OpenAI Fine-Tuning.
 - OpenAI Fine-Tune API requires data to be in valid JSON, Chat Completions API format, with a .jsonl dataset where each line represents a unique JSON object containing a topic within a message array.
 
 # GPTparser Overview #
@@ -7,12 +7,12 @@
 - GPTparser is very simple to use:
 	1. Recommended: Activate Miniconda Environment
 	2. Recommended: export API within Miniconda Session
-	3. To use EX: GPTparser https://url.com output_file.json
-- GPTparser script utilizes 'Few Shot Prompting', to adjust output format adjust the examples & prompt.
+	3. To use i.e.: GPTparser https://url.com output_file.json
+- GPTparser script utilizes 'Few Shot Prompting', to adjust data output, adjust the examples & prompt (follow 'modifying for local use' directions).
 	- Current prompt is carefully curated to accurately parse text into Chat Completions, JSON API.
- - I suggest utilizing Miniconda Envrionments for version / dependency control. This also makes it more secure to utilize your API key.
- 	- For beginners this isn't required, and if you choose not to use these virutal environments then be sure to:
-  		1. Install #1 & #2 dependencies below before using GPTparser
+ - I suggest utilizing Miniconda Envrionments for security & version / dependency control.
+ 	- FYI, for beginners this isn't required, and if you choose not to use these virutal environments then be sure to:
+  		1. Install Dependency(1) & Dependency(2) below before using GPTparser
     		2. Securely activate your OpenAI API Key, and store it.
 
 

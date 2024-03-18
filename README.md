@@ -1,8 +1,8 @@
-### GPTparser for OPENAI fine-tune ###
+# GPTparser for OPENAI fine-tune #
 - GPTparser is a tool for dataset creation to be used with OpenAI fine-tuning.
 - OpenAI Fine-Tune API requires data to be in valid JSON, Chat Completions API format, with a .jsonl dataset where each line represents a unique JSON object containing a topic within a message array.
 
-### GPTparser ###
+# GPTparser Overview #
 - GPTparser works great for scraping / parsing text content directly from any website into individual JSON files.
 - GPTparser is very simple to use:
 	1. Recommended: Activate Miniconda Environment
@@ -15,13 +15,14 @@
   		1. Install #1 & #2 dependencies below before using GPTparser
     		2. Securely activate your OpenAI API Key, and store it.
 
-After you have used GPTparser to parse your webpages into documents, utilize the scripts in /scripts to turn them into a usable dataset.
-	- See directions below at ### /scripts ###
+
+## After you have used GPTparser to parse your webpages into documents, utilize the scripts in /scripts to turn them into a usable dataset. ##
+### View individual scripts for directions ###
 
 This was built using Linux Ubuntu, please adjust the below directions per your OS.
 *GPTparser shares no professional affiliation with OpenAI.*
 
-### Why ###
+# Why #
 I created GPTparser because I couldn't find a tool that enabled me to efficiently scrape and parse content directly from URL's into an output file.
 I also created this with the goal and strategy of utilizing cost effective and quality control measures.
 	- GPTparser enables you to create a large 60k word dataset and finetune via OpenAI API for <$5.
@@ -29,11 +30,11 @@ GPTparser enables you to work directly from your Linux CLI, and having individua
 See the /scripts directory for further tools to help you format, validate, and combine these files into one dataset in proper Chat Completions JSON API format.
 
 
-### GPTparser Installation ###
-# Ubuntu Directions: # 
+# GPTparser Installation #
+## Ubuntu Directions: ## 
 
 Clone repo and install the package:
-$ git clone https://github.com/dtflare/GPTparser.git
+$ git clone git@github.com:dtflare/GPTparser.git
 Create a new Miniconda environment, & apply the following settings:
 $ conda create --name GPTparser python=3.8
 Activate environment
@@ -53,7 +54,7 @@ $ GPTparser https://url.com output_file.json
 
 
 
-### For those modifying the script for local use, follow directions below ###
+# For those modifying the script for local use, follow directions below #
 Adjust prompts as needed, currently it will output OPENAI's Chat Completions JSON format for Fine-Tuning.
 For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
 

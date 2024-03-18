@@ -99,3 +99,10 @@ To contribute:
 Submit feature requests via the issues tab.
 
 ### If you use GPTparser for your dataset, all I ask is you or your team share it with the community! ##
+
+Citation
+message: "If you use GPTparser, please cite it as below."
+authors:
+  - family-names: Flaherty
+    given-names: Daniel
+title: GPTparser

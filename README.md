@@ -54,7 +54,7 @@ $ GPTparser https://url.com output_file.json
 
 
 
-# For those modifying the script for local use, follow directions below #
+### For those modifying the GPTparser for local use, follow directions below ###
 Adjust prompts as needed, currently it will output OPENAI's Chat Completions JSON format for Fine-Tuning.
 For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
 

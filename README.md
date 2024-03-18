@@ -1,4 +1,4 @@
-# GPTparser for OPENAI fine-tune #
+# GPTparser for OPENAI Fine-Tune API #
 - GPTparser is a dataset creation tool to be used with OpenAI Fine-Tuning.
 - OpenAI Fine-Tune API requires data to be in valid JSON, Chat Completions API format, with a .jsonl dataset where each line represents a unique JSON object containing a topic within a message array.
 

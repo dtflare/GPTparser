@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
-#this is newest combinR, applies the newline character to separate JSON objects as lines
+# Will combine all individual .json files into one .jsonl dataset
+# Creates individual JSON objects as separate lines per Chat Completions format for OpenAI Fine-Tuning
+# Add to $PATH, and run from inside directory with individual .json files: $ combinR output_dataset.jsonl
+
+
 
 import os
 import json

@@ -19,7 +19,7 @@ setup(
 #        ],
 #    },
 #)
-    ],
+##    ],
     entry_points={
         'console_scripts': [
             'GPTparser=GPTparser.GPTparser:main',

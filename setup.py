@@ -15,7 +15,7 @@ setup(
     python_requires='>=3.8',
     entry_points={
     'console_scripts': [
-        'IparsR=parsR.parsR:main',  # Format is 'command=function'
+        'GPTparser=GPTparser.parsR:main',  # Format is 'command=function'
         ],
     },
 )

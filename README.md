@@ -45,7 +45,7 @@
 - Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
 	- Must be done everytime you start Miniconda session / start using GPTparser
 	1. $ export OPENAI_API_KEY=<enter_api_key>
-- Use GPTparser, create and cd into directory that will host your parsed files, then:
+- T use GPTparser - first create and cd into directory that will host your parsed files - then:
 	1. $ GPTparser https://url.com output_file.json
 
 - Anytime in the future where you use GPTparser, all you have to do is activate the correct Miniconda env, and export your API key.

@@ -34,21 +34,21 @@
 ## Ubuntu Directions: ## 
 
 - Clone repo and install the package:
-- $ git clone git@github.com:dtflare/GPTparser.git
+1.  $ git clone git@github.com:dtflare/GPTparser.git
 - Create a new Miniconda environment, & apply the following settings:
--- $ conda create --name GPTparser python=3.8
+2.  $ conda create --name GPTparser python=3.8
 - Activate environment
--- $ conda activate GPTparser
+3.  $ conda activate GPTparser
 - Go into your cloned repo directory
--- $ cd GPTparser
+4.  $ cd GPTparser
 - Once in /GPTparser install the package/dependencies:
 	- Must be installed within activated Miniconda Environment (does not specifically require Miniconda)
--- $ pip install .
+5.  $ pip install .
 -Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
 	- Must be done everytime you start Miniconda session / start using GPTparser
--- $ export OPENAI_API_KEY=<enter_api_key>
+6.  $ export OPENAI_API_KEY=<enter_api_key>
 - Use GPTparser, create and cd into directory that will host your parsed files, then:
--- $ GPTparser https://url.com output_file.json
+7.  $ GPTparser https://url.com output_file.json
 
 - Anytime in the future where you use GPTparser, all you have to do is activate the correct Miniconda env, and export your API key.
 
@@ -61,25 +61,25 @@
 ### Once changes are applied add GPTparser to $PATH. ###
 - Active Miniconda Env.
 - Once GPTparser Miniconda session is activated, launch both 1 & 2 dependencies everytime.
-1. Dependency(1)
-$ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
-2. Dependency(2), Langchain's newspaper module:
-$ !pip install -q newspaper3k python-dotenv
+- Dependency(1)
+1. $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
+- Dependency(2), Langchain's newspaper module:
+2. $ !pip install -q newspaper3k python-dotenv
 -Add API KEY:
-$ export OpenAI_API_KEY
+3. $ export OpenAI_API_KEY
 -mkdir & cd into parsed files host directory, then with GPTparser in $PATH:
-$ GPTparser https://url.com output_file.json
+4. $ GPTparser https://url.com output_file.json
 -IF GPTparser is not in $PATH, simply use:
-$ ./GPTparser https://url.com output_file.json
+5. $ ./GPTparser https://url.com output_file.json
 
 
  
  
 ### Reminder ###
-To run GPTparser after installation, or once added to your global path:
-$ GPTparser website_url.com file_name.json
+- To run GPTparser after installation, or once added to your global path:
+1. $ GPTparser website_url.com file_name.json
 OR
-$ GPTparser website_url.com
+1. $ GPTparser website_url.com
 
 ### /Scripts ###
 # See individual scripts for use #

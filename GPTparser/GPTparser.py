@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# !pip install -q newspaper3k python-dotenv
 # pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
+# !pip install -q newspaper3k python-dotenv
 
 import sys
 import warnings
@@ -11,19 +11,19 @@ from langchain.schema import HumanMessage
 from langchain.chat_models import ChatOpenAI
 import json
 
-#wrapping script in main() for SETUPTOOLS entrypoint
+#wrapping script in main() for SETUPTOOLS
 
 def main():
     # Suppress UserWarnings
     warnings.filterwarnings("ignore")
    
-    # Command line arguments handling
+    # How to use:
     if len(sys.argv) < 2:
-        print("Usage: python parsR.py <URL> [output_file]")
+        print("Usage: GPTparser.py <URL> [output_file]")
         sys.exit(1)
 
     article_url = sys.argv[1]  # The URL from command line
-    output_file = sys.argv[2] if len(sys.argv) > 2 else None  # Optional output file
+    output_file = sys.argv[2] if len(sys.argv) > 2 else None  #can print output directly to terminal.
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'
@@ -46,29 +46,28 @@ def main():
 
     #####listing examples
 
-    # Previously defined parts of the script remain unchanged
-
-    # Define your examples as actual Python objects
+    # Directly from OpenAI's Chat Completions JSON API format examples
     examples = [
         {"role": "system", "content": "Marv is a factual chatbot that is also sarcastic."},
         {"role": "user", "content": "What's the capital of France?"},
         {"role": "assistant", "content": "Paris, as if everyone doesn't know that already."}
     ]
 
-    # Convert the examples list to a JSON string for inclusion in the prompt
+    # Space & indent examples which the output will reflect = readable/editable
     examples_json = json.dumps(examples, indent=4)
 
-    # Preparing the prompt without using .format() for the examples
+    # PPrompt without .format()
     prompt_start = "You are a very good assistant that parses each article's text into OpenAI fine-tune JSON format by adding a messages array at the beginning, along with roles and content  for System, User, and Assistant. Example 1 & 2 = correct format. \n\nExample 1 and 2:\n"
     prompt_end = f"\n\nHere's the article you want to summarize.\n\n==================\nTitle: {article.title}\n\n{article.text}\n==================\n\nParse previous article into OpenAI finetune format that is conversational. Without referencing the article, use the text to create realistic User questions, Assistant answers, and System messages. Assistant messages in the data = ideal responses. User messages in data = create questions a human may ask about the article's text. System messages in data = background information, never quoted directly as part of assistant responses, used to elevate data comprehension, response relevancy and quality."
 
-    # Combining parts of the prompt with the examples_json string
+    # Prompt +  examples_json string
     prompt = prompt_start + examples_json + prompt_end
 
 
-    #####listing examples
+    #####end listing examples
 
-    # Prepare the prompt with the article data
+    # Original prompt / example structure below. Redundant, but need to experiment more
+    ## before removing because prompt + examples with the examples_json is crucial
     prompt = """You are a very good assistant that parses each article's text into OpenAI fine-tune JSON format by adding a messages array at the beginning, along with  creating roles and content for System, User, and Assistant. Example 1 & 2 = correct format.
 
 
@@ -92,13 +91,13 @@ def main():
     chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
     summary = chat(messages)
 
-    # Output handling
+    #  Choose OAI model, 3.5 is great for first stage scraping/parsing.
     if output_file:
         with open(output_file, 'w') as f:
             f.write(summary.content)
     else:
         print(summary.content)
 
-# end of def main(): wrapper for entry point.
+# ends def main() wrapper
 if __name__ == "__main__":
     main()

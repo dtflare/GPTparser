@@ -27,6 +27,8 @@
 	1. GPTparser enables you to create a large 60k+ token dataset and finetune via OpenAI API for <$5.
 - GPTparser enables you to work directly from your Linux CLI, and having individual control over the files maximizes your ability to edit the content which = maximal quality.
 - See the /scripts directory for further tools to help you format, validate, and combine these files into one dataset in proper Chat Completions JSON API format.
+- I'd like to gather a small community of people interested in this line of work, as I will be designing a website and UI to host this project in the near future.
+- If you're interested in the project please reach out, feel free to message directly.
 
 
 # GPTparser Installation #
@@ -87,6 +89,7 @@
 
 ### Contributions ###
 Please feel free to contribute! Whether it's code, directions etc. credit will always be given.
+I'd like to create a small community of people interested in this line of work.
 
 To contribute:
 

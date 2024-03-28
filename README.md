@@ -1,12 +1,13 @@
 # GPTparser for OPENAI Fine-Tune API #
 - GPTparser is a dataset creation tool to be used with OpenAI Fine-Tuning.
+- GPTparser allows you to scrape and parse webpage text into structured JSON files.
 - OpenAI Fine-Tune API requires data to be in valid JSON, Chat Completions API format, with a .jsonl dataset where each line represents a unique JSON object containing a topic within a message array.
 
 # GPTparser Overview #
 - GPTparser works great for scraping / parsing text content directly from any website into individual JSON files.
 - GPTparser is very simple to use:
 	1. Recommended: Activate Miniconda Environment
-	2. Recommended: export API within Miniconda Session
+	2. Recommended: export OpenAI API within Miniconda Session
 	3. To use i.e.: GPTparser https://url.com output_file.json
 - GPTparser script utilizes 'Few Shot Prompting', to adjust data output, adjust the examples & prompt (follow 'modifying for local use' directions).
 	- Current prompt is carefully curated to accurately parse text into Chat Completions, JSON API.
@@ -22,13 +23,13 @@
 - *GPTparser shares no professional affiliation with OpenAI.*
 
 # Why #
-- I created GPTparser because I couldn't find a tool that enabled me to efficiently scrape and parse content directly from URL's into an output file.
-- GPTparser was created for ease of use, to be cost effective, and to enable effective quality control.
-	1. GPTparser enables you to create a large 60k+ token dataset and finetune via OpenAI API for <$5.
-- GPTparser enables you to work directly from your Linux CLI, and having individual control over the files maximizes your ability to edit the content which = maximal quality.
+- I created GPTparser because I couldn't find a tool that enabled me to efficiently scrape and parse content directly from URL's into files.
+- Working directly from your Linux CLI with individually parsed files allows for more granular control over the data.
+- GPTparser was created for ease of use, to be cost effective, and to enable effective quality control to enhance access to OpenAI's Fine-tuning service and dataset curation techniques.
+	1. GPTparser enables you to create a large 50k+ token dataset and finetune via OpenAI API for <$5.
 - See the /scripts directory for further tools to help you format, validate, and combine these files into one dataset in proper Chat Completions JSON API format.
 - I'd like to gather a small community of people interested in this line of work, as I will be designing a website and UI to host this project in the near future.
-- If you're interested in the project please reach out, feel free to message directly.
+	- If you're interested in the project please reach out, feel free to message directly.
 
 
 # GPTparser Installation #

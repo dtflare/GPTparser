@@ -29,7 +29,7 @@
 	1. GPTparser enables you to create a large 50k+ token dataset and finetune via OpenAI API for <$5.
 - See the /scripts directory for further tools to help you format, validate, and combine these files into one dataset in proper Chat Completions JSON API format.
 - I'd like to gather a small community of people interested in this line of work, as I will be designing a website and UI to host this project in the near future.
-	- If you're interested in the project please reach out, feel free to message directly.
+	- If you're interested in the project let's connect! dtflare@proton.me
 
 
 # GPTparser Installation #

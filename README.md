@@ -1,6 +1,6 @@
 # GPTparser for OPENAI Fine-Tune API #
-- GPTparser is a dataset creation tool to be used for OpenAI Fine-Tuning prep.
-- GPTparser allows you to scrape and parse webpage text into formatted JSON Chat Completions files.
+- GPTparser is an AI parsing tool to create datasets for OpenAI Fine-Tuning.
+- GPTparser allows you to scrape and parse webpage text into individual JSON files in Chat Completions format.
 - OpenAI Fine-Tune API requires data to be in valid JSON, Chat Completions API format, with a .jsonl dataset where each line represents a unique JSON object containing a topic within a message array.
 
 # GPTparser Overview #
@@ -93,8 +93,8 @@
 - wordcount = use to get accurate word count of your combined dataset
 
 ### Contributions ###
-Please feel free to contribute! Whether it's code, directions etc. credit will always be given.
-I'd like to create a small community of people interested in this line of work.
+Please feel free to contribute! Whether it's code, directions, etc., credit will always be given.
+Please reach out if you'd like to collab on any AI related projects: websitegithub.happily959@passinbox.com
 
 To contribute:
 

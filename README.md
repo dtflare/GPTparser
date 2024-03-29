@@ -1,6 +1,6 @@
 # GPTparser for OPENAI Fine-Tune API #
-- GPTparser is a dataset creation tool to be used with OpenAI Fine-Tuning.
-- GPTparser allows you to scrape and parse webpage text into structured JSON files.
+- GPTparser is a dataset creation tool to be used for OpenAI Fine-Tuning prep.
+- GPTparser allows you to scrape and parse webpage text into formatted JSON Chat Completions files.
 - OpenAI Fine-Tune API requires data to be in valid JSON, Chat Completions API format, with a .jsonl dataset where each line represents a unique JSON object containing a topic within a message array.
 
 # GPTparser Overview #
@@ -23,14 +23,13 @@
 - *GPTparser shares no professional affiliation with OpenAI.*
 
 # Why #
-- I created GPTparser because I couldn't find a tool that enabled me to efficiently scrape and parse content directly from URL's into files.
+- I created GPTparser because I couldn't find a tool that enabled me to efficiently scrape and parse content directly from URL's into structured JSON files.
 - Working directly from your Linux CLI with individually parsed files allows for more granular control over the data.
 - GPTparser was created for ease of use, to be cost effective, and to enable effective quality control to enhance access to OpenAI's Fine-tuning service and dataset curation techniques.
 	1. GPTparser enables you to create a large 50k+ token dataset and finetune via OpenAI API for <$5.
 - See the /scripts directory for further tools to help you format, validate, and combine these files into one dataset in proper Chat Completions JSON API format.
-- I'd like to gather a small community of people interested in this line of work, as I will be designing a website and UI to host this project in the near future.
-	- If you're interested in the project let's connect! dtflare@proton.me
-
+- I'd like to gather a small community of people interested in making complex AI workflows more accessible, & in the near future I'll be designing a website / UI to host this project.
+	- If you're interested connecting, reach out! -- websitegithub.happily959@passinbox.com
 
 # GPTparser Installation #
 ## Ubuntu Directions: ## 
@@ -101,6 +100,7 @@ To contribute:
     
 
 Submit feature requests via the issues tab.
+Submit Security Issues directly to my email: websitegithub.happily959@passinbox.com
 
 ### If you use GPTparser for your dataset please share it - or your experience - with the community! ###
 

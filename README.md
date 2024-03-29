@@ -36,18 +36,19 @@
 
 - Clone repo and install the package:
 	1. $ git clone git@github.com:dtflare/GPTparser.git
-- Create a new Miniconda environment, & apply the following settings:
-  	1. $ conda create --name GPTparser python=3.8
+- Navigate into your cloned repo directory
+  	1. $ cd GPTparser
+- Choose **one of the two** below options to create a new Miniconda environment (Conda Env not required, but highly recommended):
+  	1. $ conda env create -f environment.yml
+  	2. $ conda create --name GPTparser python=3.8
 - Activate environment
   	1. $ conda activate GPTparser
-- Go into your cloned repo directory
-  	1. $ cd GPTparser
 - Once in /GPTparser install the package/dependencies (Miniconda env recommended but not required)
 	1. $ pip install .
 - Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
 	- Must be done everytime you start Miniconda session / start using GPTparser
 	1. $ export OPENAI_API_KEY=<enter_api_key>
-- T use GPTparser - first create and cd into directory that will host your parsed files - then:
+- To use GPTparser - first create and cd into directory that will host your parsed files - then:
 	1. $ GPTparser https://url.com output_file.json
 
 - Anytime in the future where you use GPTparser, all you have to do is activate the correct Miniconda env, and export your API key.
@@ -56,15 +57,19 @@
 
 ### For those modifying the GPTparser for local use, follow directions below ###
 - Adjust prompts as needed, currently it will output OPENAI's Chat Completions JSON format for Fine-Tuning.
-- For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
-
-### Once changes are applied add GPTparser to $PATH. ###
-- Active Miniconda Env.
-- Once GPTparser Miniconda session is activated, launch both 1 & 2 dependencies everytime.
-- Dependency(1)
-	1. $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
-- Dependency(2), Langchain's newspaper module:
-	1. $ !pip install -q newspaper3k python-dotenv
+	- For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
+- **Once changes are applied add GPTparser to $PATH.**
+- Active Miniconda Environment
+  	1. With YAML file in GPTparser repo:
+  		- $ conda env create -f environment.yml
+  	2. Create your own:
+		- $ conda create --name GPTparser python=3.8
+- Once GPTparser Miniconda session is activated, launch the below 1 & 2 dependencies.
+  	- If you use other Python tools within your Cona Env, launch the dependencies everytime at start of every session.
+	- Dependency(1)
+		1. $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
+	- Dependency(2), Langchain's newspaper module:
+		1. $ !pip install -q newspaper3k python-dotenv
 -Add API KEY:
 	1. $ export OpenAI_API_KEY
 -mkdir & cd into parsed files host directory, then with GPTparser in $PATH:

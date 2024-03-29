@@ -87,8 +87,8 @@
 	1. $ GPTparser website_url.com
 
 
-### /Scripts ###
-# View individual scripts for use #
+
+# View individual scripts for use in /scripts folder #
 - j_val = JSON validator for individual .json files within Directory
 - combinR = combines all individual files into 1 .jsonl dataset
 - wordcount = use to get accurate word count of your combined dataset

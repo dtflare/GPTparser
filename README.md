@@ -17,9 +17,8 @@
     		2. Securely activate your OpenAI API Key, and store it.
 
 
-## After you have used GPTparser to parse your webpages into documents, utilize the scripts in /scripts to turn them into a usable dataset. ##
 
-- This was built using Linux Ubuntu, please adjust the below directions per your OS.
+- **This was built using Linux Ubuntu, please adjust the below directions per your OS.**
 - *GPTparser shares no professional affiliation with OpenAI.*
 
 # Why #
@@ -87,8 +86,8 @@
 	1. $ GPTparser website_url.com
 
 
-
-# View individual scripts for use in /scripts folder #
+## After you have used GPTparser to parse your webpages into documents, utilize the scripts in /scripts to turn them into a usable dataset. ##
+**View comments inside individual scripts in /scripts for use directions**
 - j_val = JSON validator for individual .json files within Directory
 - combinR = combines all individual files into 1 .jsonl dataset
 - wordcount = use to get accurate word count of your combined dataset

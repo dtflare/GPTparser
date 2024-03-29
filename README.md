@@ -57,7 +57,7 @@
 
 ### For those modifying the GPTparser for local use, follow directions below ###
 - Adjust prompts as needed, currently it will output OPENAI's Chat Completions JSON format for Fine-Tuning.
-	- For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
+	1. For those planning on editing the examples/prompt for different output, and/or create a new Miniconda Env.
 - **Once changes are applied add GPTparser to $PATH.**
 - Active Miniconda Environment
   	1. With YAML file in GPTparser repo:
@@ -65,26 +65,27 @@
   	2. Create your own:
 		- $ conda create --name GPTparser python=3.8
 - Once GPTparser Miniconda session is activated, launch the below 1 & 2 dependencies.
-  	- If you use other Python tools within your Cona Env, launch the dependencies everytime at start of every session.
-	- Dependency(1)
-		1. $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
-	- Dependency(2), Langchain's newspaper module:
-		1. $ !pip install -q newspaper3k python-dotenv
--Add API KEY:
+  	1. If you use other Python tools within your Cona Env, launch the dependencies everytime at start of every session.
+  	   	- For best results only don't use other tools within your GPTparser Conda Env.
+	3. Dependency(1)
+		- $ pip install langchain==0.1.4 deeplake openai==1.10.0 tiktoken
+	4. Dependency(2), Langchain's newspaper module:
+		- $ !pip install -q newspaper3k python-dotenv
+- Add API KEY:
 	1. $ export OpenAI_API_KEY
--mkdir & cd into parsed files host directory, then with GPTparser in $PATH:
+- mkdir & cd into parsed files host directory, then with GPTparser in $PATH:
 	1. $ GPTparser https://url.com output_file.json
--IF GPTparser is not in $PATH, simply use:
+- IF GPTparser is not in $PATH, simply use:
 	1. $ ./GPTparser https://url.com output_file.json
 
 
- 
  
 ### Reminder ###
 - To run GPTparser after installation, or once added to your global path:
 	1. $ GPTparser website_url.com file_name.json
 - OR:
 	1. $ GPTparser website_url.com
+
 
 ### /Scripts ###
 # View individual scripts for use #

@@ -30,7 +30,7 @@
 - I'd like to gather a small community of people interested in making complex AI workflows more accessible, & in the near future I'll be designing a website / UI to host this project.
 	- If you're interested connecting, reach out! -- websitegithub.happily959@passinbox.com
 
-# GPTparser Installation via Pip (easiest) or Git #
+# GPTparser Installation #
 ## Pip Linux Directions: ## 
 - Create a new Miniconda environment (Conda Env not required, but highly recommended):
   	1. $ conda create --name GPTparser python=3.8

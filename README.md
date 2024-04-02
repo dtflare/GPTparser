@@ -30,21 +30,34 @@
 - I'd like to gather a small community of people interested in making complex AI workflows more accessible, & in the near future I'll be designing a website / UI to host this project.
 	- If you're interested connecting, reach out! -- websitegithub.happily959@passinbox.com
 
-# GPTparser Installation #
-## Ubuntu Directions: ## 
+# GPTparser Installation via Pip (easiest) or Git #
+## Pip Linux Directions: ## 
+- Create a new Miniconda environment (Conda Env not required, but highly recommended):
+  	1. $ conda create --name GPTparser python=3.8
+- Activate Environment:
+  	1. $ conda activate GPTparser
+- Install Package:
+	1. $ pip install GPTparser
+- Export your OpenAI API Key within your Miniconda environment - will expire when session ends:
+	- Must be done everytime you start Miniconda session / start using GPTparser
+	1. $ export OPENAI_API_KEY=<enter_api_key>
+- To use GPTparser - first create and cd into directory that will host your parsed files - then:
+	1. $ GPTparser https://url.com output_file.json  
 
-- Clone repo and install the package:
+
+## Github Linux Directions: ## 
+- Clone Repo and Install Package:
 	1. $ git clone git@github.com:dtflare/GPTparser.git
-- Navigate into your cloned repo directory
+- Navigate into Root Directory of Cloned Repo:
   	1. $ cd GPTparser
 - Choose **one of the two** below options to create a new Miniconda environment (Conda Env not required, but highly recommended):
   	1. $ conda env create -f environment.yml
   	2. $ conda create --name GPTparser python=3.8
-- Activate environment
+- Activate Environment:
   	1. $ conda activate GPTparser
-- Once in /GPTparser install the package/dependencies (Miniconda env recommended but not required)
+- Once in /GPTparser install the package/dependencies (Miniconda env recommended but not required):
 	1. $ pip install .
-- Export your OpenAI API Key within your Miniconda environment - will expire when session ends.
+- Export your OpenAI API Key within your Miniconda environment - will expire when session ends:
 	- Must be done everytime you start Miniconda session / start using GPTparser
 	1. $ export OPENAI_API_KEY=<enter_api_key>
 - To use GPTparser - first create and cd into directory that will host your parsed files - then:
